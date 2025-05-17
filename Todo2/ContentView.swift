@@ -17,7 +17,9 @@ struct ContentView: View {
                     .font(.system(size: 40, weight: .bold))
                 Spacer()
                 Button {
-                    showNewTask = true
+                    withAnimation {
+                        showNewTask = true
+                    }
                 } label: {
                     Text("+")
                         .font(.title)
